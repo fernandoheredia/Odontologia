@@ -1,0 +1,45 @@
+  @model mvc_project.Models.Profesional.ProfesionalModel
+
+@{
+Layout = "_Layout";
+}
+
+<div class="row justify-content-around">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="id" placeholder="Id" value="@Model.Id"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="tipeDoc" placeholder="Tipo Documento" value="@Model.TipeDoc"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="dni" placeholder="Dni" value="@Model.Dni"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="nombre" placeholder="Nombre" value="@Model.Name"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="apellido" placeholder="Apellido" value="@Model.LastNname"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="especialidad" placeholder="Especialidad" value="@Model.Specialty"/>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <input class="form-control" type="text" id="matricula" placeholder="Matricula" value="@Model.Tuition"/>
+      </div>
+    </div>
+  </div>
+</div>

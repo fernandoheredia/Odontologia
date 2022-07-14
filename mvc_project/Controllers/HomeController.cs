@@ -55,7 +55,7 @@ namespace mvc_project.Controllers
                                 "UsuarioLogueado",
                                 loginModel);
 
-            return Redirect("~/Panel/Index");
+            return Redirect("~/HomePage/Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -14,9 +14,47 @@
         <span style="color: red">@Model.message</span>
         <br><br>
     }
-    <input type="text" value="" name="userName" id="user_name" placeholder="Ingrese su nombre de usuario">
-    <br><br>
-    <input type="password" value="" name="password" id="password" placeholder="Ingrese su contraseña">
-    <br><br>
-    <button type="submit">Ingresar</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center min-vh-100">
+                    <div class="w-100 d-block my-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-5">
+                                <div class="card">
+                                    
+                                    <div class="card-body">
+                                        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">    
+                                            <a href="#">
+                                                <span><img src="@Url.Content("~/images/Imagen19.png")" alt="" height="100"></span>
+                                            </a>
+                                            </nav>
+                                        <div class="text-center mb-4 mt-3">
+                                            
+                                        </div>
+                                        <form action="@Url.Content("~/Login/Index")" method="post" class="p-2">
+                                            <div class="form-group">
+                                                <label for="emailaddress">Correo</label>
+                                                <input class="form-control" type="text" name="userName" required="" autocomplete="off" id="user_name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Contraseña</label>
+                                                <input class="form-control" type="password" required="" name="password" autocomplete="off" id="password">
+                                            </div>
+
+                                            <div class="mb-3 text-center">
+                                                <button class="btn btn-dark btn-block" type="submit">Ingresar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+  
 </form>
