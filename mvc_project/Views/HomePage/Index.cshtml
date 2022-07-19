@@ -1,205 +1,278 @@
-
 @{
     ViewData["Title"] = "Inicio";
 }
- 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</head>
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a>GESTION DE TURNOS</a></li>
     </ol>
 </nav>
 
+<body>
+
+    <hr />
+
+    <div class="container">
 
 
-                <hr />
-                
-                    <div class="">
-                        
-                            <div class="col-sm-4">
-                                <div class="input-group input-group-sm mb-2">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text bg-info text-white" for="inputGroupSelect01">DNI</label>
-                                    </div>
-                                    <input id="txtsubtotal" readonly type="text" class="form-control" value="0">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="input-group input-group-sm mb-2">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Nombre y Apellido.</label>
-                                    </div>
-                                    <input id="txtsubtotal" readonly type="text" class="form-control" value="0">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="input-group input-group-sm mb-2">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Especialidad</label>
-                                    </div>
-                                    <input id="txtigv" readonly type="text" class="form-control" value="0">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="input-group input-group-sm mb-2">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Profesional</label>
-                                    </div>
-                                    <input id="txttotal" readonly type="text" class="form-control" value="0">
-                                </div>
-                            </div>
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                    <label class="input-group-text bg-info text-white" for="inputGroupSelect01">DNI</label>
+                </div>
+                <select name="Dni-Pasiente" id="dni-pasiente" readonly type="text" class="form-control">
+                    <option value=""select></option>
+                    <option value="">66521487</option>
+                    <option value="">45362147</option>
+                    <option value="">541236987</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                    <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Nombre y
+                        Apellido.</label>
+                </div>
+                <select name="Name-LastName-Pasiente" id="name-lastname_pasiente" readonly type="text" class="form-control">
+                    <option value=""select></option>
+                    <option value="">arturo</option>
+                    <option value="">roberto</option>
+                    <option value="">guillermina</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                    <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Especialidad</label>
+                </div>
+                <select name="Especialidad" id="especialidad" readonly type="text" class="form-control">
+                    <option value=""select></option>
+                    <option value="">endodoncia</option>
+                    <option value="">periodoncia</option>
+                    <option value="">odontopedriatria</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                    <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Practica</label>
+                </div>
+                <select name="Practica" id="practica" readonly type="text" class="form-control">
+                    <option value=""select></option>
+                    <option value="">0101-Examen-Diagnostico Fichado y Plan de Tratamiento</option>
+                    <option value="">0103-Visita a Domiciio</option>
+                    <option value="">0104-Consulta de Urgencia que no Costituya Paso Intermedio de Tratamiento</option>
+                    <option value="">0105-Consulta Periodica Preventiva</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                    <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Profesional</label>
+                </div>
+                <select name="Name-LastName" id="name-lastname" readonly type="text" class="form-control">
+                    <option value=""select></option>
+                    <option value="">federico pietrasanta</option>
+                    <option value="">italo lobo</option>
+                    <option value="">laura novoa</option>
+                </select>
+            </div>
+        </div>
+    </div>
 
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-</head>
 
-<body style="background-color: ivory;">
-        <form>
-            <div class="row form-group">
-                <label for="date" class="col-sm-1 col-form-label">Date</label>
-                <div class="col-sm-4">
-                    <div class="input-group date" id="datepicker">
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                            <span class="input-group-text bg-white">
-                                <i class="fa fa-calendar"></i>
-                            </span>
+    <form>
+        <div class="row form-group">
+            <label for="date" class="col-sm-1 col-form-label">Date</label>
+            <div class="col-sm-4">
+                <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control">
+                    <span class="input-group-append">
+                        <span class="input-group-text bg-white">
+                            <i class="fa fa-calendar"></i>
                         </span>
-                    </div>
+                    </span>
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
     </section>
 
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             $('#datepicker').datepicker();
         });
     </script>
 
 
-</body>
 
 
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a>MAÑANA TARDE</a></li>
+            <li class="breadcrumb-item"><a>SOBRE TURNOS</a></li>
+        </ol>
+    </nav>
 
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a>MAÑANA TARDE</a></li>
-        <li class="breadcrumb-item"><a>SOBRE TURNOS</a></li>
-    </ol>
-</nav>                        
-                   
-
-<div class="row">
+    <div class="row">
         <div class="col-sm-12">
             <div class="card border-info">
                 <div class="card-content p-2 bg-info text-white">
-                            </div>
-                    <div class="row mt-2">
-                        <div class="col-sm-10">
-                            <div class="card border-info">
-                                <div class="card-body p-2">
-                                    
-                                        <div class="col-sm-8">
-                                            <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                                <div class="col-sm-4">
-                                                    <div class="input-group input-group-sm mb-2">
-                                                        <div class="input-group-prepend">
-                                                            <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                        </div>
-                                                            <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                    </div>
-                                                </div>
-                                            <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-
-                                             <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                             <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                             <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                             <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                             <div class="col-sm-4">
-                                                <div class="input-group input-group-sm mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i aria-hidden="true"></i>08:30</button>
-                                                    </div>
-                                                        <lavel id="txtsubtotal" readonly type="text" class="form-control" >--------------</label>
-                                                </div>
-                                            </div>
-                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>        
-                        </div>
-                       
-                     
-         
-
-
-                    <div class="col-sm-3">
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-10">
                         <div class="card border-info">
                             <div class="card-body p-2">
-                                
-                                            <button id="" type="button" class="btn btn-sm btn-success btn-block"><i class="fa fa-plus" aria-hidden="true"></i>  Cargar Paciente</button>
-                                            <button id="" type="button" class="btn btn-sm btn-success btn-block" onclick="CargaProfesional()"><i class="fa fa-plus" aria-hidden="true" ></i>  Cargar Profesinal</button>
-                                            <button id="" type="button" class="btn btn-sm btn-success btn-block"><i class="fa fa-plus" aria-hidden="true"></i>  Cargar practicas</button>
+
+                                <div class="col-sm-8">
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                                <button id="btnAgregar" type="button"
+                                                    class="btn btn-sm btn-success btn-block"><i
+                                                        aria-hidden="true"></i>08:30</button>
+                                            </div>
+                                            <lavel id="txtsubtotal" readonly type="text" class="form-control">
+                                                --------------</label>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-<script> 
-function CargaProfesional()
-{
-    window.location = urlContent + "Profesional/CreateProfesional";
-}
-</script>
+
+
+
+
+                <div class="col-sm-3">
+                    <div class="card border-info">
+                        <div class="card-body p-2">
+
+                            <button id="" type="button" class="btn btn-sm btn-success btn-block"
+                            onclick="CargaPaciente()"><i class="fa fa-plus"aria-hidden="true"></i> Cargar Paciente</button>
+                            <button id="" type="button" class="btn btn-sm btn-success btn-block"
+                            onclick="CargaProfesional()"><i class="fa fa-plus" aria-hidden="true"></i> CargarProfesinal</button>
+                            <button id="" type="button" class="btn btn-sm btn-success btn-block"
+                            onclick="CargaPracticas()"><i class="fa fa-plus"aria-hidden="true"></i> Cargar practicas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function CargaPaciente() {
+                        window.location = urlContent + "Pacientes/CreatePaciente";
+                    }
+                </script>
+                <script>
+                    function CargaProfesional() {
+                        window.location = urlContent + "Profesional/CreateProfesional";
+                    }
+                </script>
+                <script>
+                    function CargaPracticas() {
+                        window.location = urlContent + "Practicas/CreatePracticas";
+                    }
+                </script>
+</body>

@@ -1,8 +1,7 @@
-@model mvc_project.Models.Profesional.ProfesionalModel
-
 @{
-  Layout = "_Layout";
+    Layout = "_Layout";
 }
+<body>
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a>Datos Personales</a></li>
@@ -65,10 +64,10 @@
       <div class="col-md-12 pl-0 pr-0">
         <div class="input-group input-group-sm mb-2">
           <div class="input-group-prepend">
-            <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Especialidad</label>
+            <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Nacimiento</label>
           </div>
           <input class="form-control" type="text" id="especialidad" placeholder="Especialidad"
-            value="@Model.Specialty" />
+            value="@Model.Birth"/>
         </div>
       </div>
     </div>
@@ -76,14 +75,32 @@
       <div class="col-md-12 pl-0 pr-0">
         <div class="input-group input-group-sm mb-2">
           <div class="input-group-prepend">
-            <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Matricula</label>
+            <label class="input-group-text bg-info text-white" for="inputGroupSelect01">Sexo</label>
           </div>
-          <input class="form-control" type="text" id="matricula" placeholder="Matricula" value="@Model.Tuition" />
+          <input class="form-control" type="text" id="especialidad" placeholder="Especialidad"
+            value="@Model.Sex"/>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col-md-12 pl-0 pr-0">
+        <div class="input-group input-group-sm mb-2">
+          <div class="input-group-prepend">
+            <label class="input-group-text bg-info text-white" for="inputGroupSelect01">ObraSocial</label>
+          </div>
+          <input class="form-control" type="text" id="matricula" placeholder="Matricula" value="@Model.MedicalSecurity" />
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<button id="" type="button" class="btn btn-sm btn-success btn-block"><i class="fa fa-plus"
-                                    aria-hidden="true"></i>Principal</button>
+<button id="" type="button" class="btn btn-sm btn-success btn-block"
+                                onclick="CargaP()"><i class="fa fa-plus" aria-hidden="true"></i> Cargar
+                                Profesinal</button>
+<script>
+    function CargaProfesional() {
+        window.location = urlContent + "Profesional/CreateProfesional";
+    }
+</script>
+</body>
